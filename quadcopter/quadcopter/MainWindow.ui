@@ -29,8 +29,8 @@
    <widget class="QGroupBox" name="GroupBox_stateEstimate">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>240</y>
+      <x>370</x>
+      <y>250</y>
       <width>401</width>
       <height>301</height>
      </rect>
@@ -43,152 +43,108 @@
       <rect>
        <x>30</x>
        <y>30</y>
-       <width>173</width>
-       <height>28</height>
+       <width>291</width>
+       <height>261</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
-       <widget class="QLabel" name="lbl_thrust">
-        <property name="text">
-         <string>Thrust</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="lbl_thrust">
+          <property name="text">
+           <string>Thrust</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_thrust"/>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLineEdit" name="led_thrust"/>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>70</y>
-       <width>141</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_9">
-      <item>
-       <widget class="QLabel" name="lbl_x">
-        <property name="text">
-         <string>X</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="lbl_x">
+          <property name="text">
+           <string>X</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_x"/>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLineEdit" name="led_x"/>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>100</y>
-       <width>142</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_10">
-      <item>
-       <widget class="QLabel" name="lbl_y">
-        <property name="text">
-         <string>Y</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="lbl_y">
+          <property name="text">
+           <string>Y</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_y"/>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLineEdit" name="led_y"/>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>160</y>
-       <width>164</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_12">
-      <item>
-       <widget class="QLabel" name="lbl_pitch">
-        <property name="text">
-         <string>Pitch</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QLabel" name="lbl_z">
+          <property name="text">
+           <string>Z</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_z"/>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLineEdit" name="led_pitch"/>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>200</y>
-       <width>156</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_13">
-      <item>
-       <widget class="QLabel" name="lbl_roll">
-        <property name="text">
-         <string>Roll</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QLabel" name="lbl_pitch">
+          <property name="text">
+           <string>Pitch</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_pitch"/>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLineEdit" name="led_roll"/>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>240</y>
-       <width>159</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_14">
-      <item>
-       <widget class="QLabel" name="lbl_yaw">
-        <property name="text">
-         <string>Yaw</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="lbl_roll">
+          <property name="text">
+           <string>Roll</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_roll"/>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLineEdit" name="led_yaw"/>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>130</y>
-       <width>141</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_11">
-      <item>
-       <widget class="QLabel" name="lbl_z">
-        <property name="text">
-         <string>Z</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="led_z"/>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="lbl_yaw">
+          <property name="text">
+           <string>Yaw</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_yaw"/>
+        </item>
+       </layout>
       </item>
      </layout>
     </widget>
