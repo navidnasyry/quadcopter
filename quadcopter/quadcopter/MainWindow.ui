@@ -58,7 +58,14 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="led_thrust"/>
+         <widget class="QLineEdit" name="led_thrust">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -72,7 +79,11 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="led_x"/>
+         <widget class="QLineEdit" name="led_x">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -86,7 +97,11 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="led_y"/>
+         <widget class="QLineEdit" name="led_y">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -100,7 +115,11 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="led_z"/>
+         <widget class="QLineEdit" name="led_z">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -114,7 +133,11 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="led_pitch"/>
+         <widget class="QLineEdit" name="led_pitch">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -128,7 +151,11 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="led_roll"/>
+         <widget class="QLineEdit" name="led_roll">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -142,7 +169,11 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="led_yaw"/>
+         <widget class="QLineEdit" name="led_yaw">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -221,86 +252,252 @@
     <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>30</y>
-       <width>771</width>
-       <height>71</height>
+       <x>10</x>
+       <y>26</y>
+       <width>801</width>
+       <height>91</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_6">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_21">
+       <layout class="QHBoxLayout" name="horizontalLayout_22">
         <item>
          <widget class="QLabel" name="lbl_LA">
           <property name="text">
-           <string>Linear Acceleration (m/s2)</string>
+           <string>Linear Acceleration (m/s^2)</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLCDNumber" name="lcd_linearAcceleration">
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Plain</enum>
-          </property>
-          <property name="smallDecimalPoint">
-           <bool>true</bool>
-          </property>
-          <property name="digitCount">
-           <number>7</number>
-          </property>
-          <property name="segmentStyle">
-           <enum>QLCDNumber::Flat</enum>
-          </property>
-          <property name="value" stdset="0">
-           <double>0.000000000000000</double>
-          </property>
-          <property name="intValue" stdset="0">
-           <number>0</number>
-          </property>
-         </widget>
+         <layout class="QFormLayout" name="formLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="lbl_LinearAcc_X">
+            <property name="text">
+             <string>X</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLCDNumber" name="lcd_linearAcceleration_X">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="smallDecimalPoint">
+             <bool>true</bool>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
+            </property>
+            <property name="value" stdset="0">
+             <double>0.000000000000000</double>
+            </property>
+            <property name="intValue" stdset="0">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="lbl_LinearAcc_Y">
+            <property name="text">
+             <string>Y</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLCDNumber" name="lcd_linearAcceleration_Y">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="smallDecimalPoint">
+             <bool>true</bool>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
+            </property>
+            <property name="value" stdset="0">
+             <double>0.000000000000000</double>
+            </property>
+            <property name="intValue" stdset="0">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formLayout_4">
+          <item row="0" column="0">
+           <widget class="QLabel" name="lbl_LinearAcc_Z">
+            <property name="text">
+             <string>Z</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLCDNumber" name="lcd_linearAcceleration_Z">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="smallDecimalPoint">
+             <bool>true</bool>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
+            </property>
+            <property name="value" stdset="0">
+             <double>0.000000000000000</double>
+            </property>
+            <property name="intValue" stdset="0">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_22">
+       <layout class="QHBoxLayout" name="horizontalLayout_21">
         <item>
          <widget class="QLabel" name="label_AV">
           <property name="text">
-           <string>Angular Velocity (m/s)</string>
+           <string>Angular Velocity (rad/s^2)</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLCDNumber" name="lcd_angularVelocity">
-          <property name="frameShadow">
-           <enum>QFrame::Plain</enum>
-          </property>
-          <property name="smallDecimalPoint">
-           <bool>true</bool>
-          </property>
-          <property name="digitCount">
-           <number>7</number>
-          </property>
-          <property name="segmentStyle">
-           <enum>QLCDNumber::Flat</enum>
-          </property>
-          <property name="value" stdset="0">
-           <double>0.000000000000000</double>
-          </property>
-          <property name="intValue" stdset="0">
-           <number>0</number>
-          </property>
-         </widget>
+         <layout class="QFormLayout" name="formLayout_5">
+          <item row="0" column="0">
+           <widget class="QLabel" name="lbl_angularVel_x">
+            <property name="text">
+             <string>X</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLCDNumber" name="lcd_angularVelocity_X">
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="smallDecimalPoint">
+             <bool>true</bool>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
+            </property>
+            <property name="value" stdset="0">
+             <double>0.000000000000000</double>
+            </property>
+            <property name="intValue" stdset="0">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formLayout_6">
+          <item row="0" column="0">
+           <widget class="QLabel" name="lbl_angularVel_Y">
+            <property name="text">
+             <string>Y</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLCDNumber" name="lcd_angularVelocity_Y">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="smallDecimalPoint">
+             <bool>true</bool>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
+            </property>
+            <property name="value" stdset="0">
+             <double>0.000000000000000</double>
+            </property>
+            <property name="intValue" stdset="0">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formLayout_7">
+          <item row="0" column="0">
+           <widget class="QLabel" name="lbl_angularVel_Z">
+            <property name="text">
+             <string>Z</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLCDNumber" name="lcd_angularVelocity_Z">
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="smallDecimalPoint">
+             <bool>true</bool>
+            </property>
+            <property name="digitCount">
+             <number>7</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
+            </property>
+            <property name="value" stdset="0">
+             <double>0.000000000000000</double>
+            </property>
+            <property name="intValue" stdset="0">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </item>
      </layout>
     </widget>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -355,7 +552,14 @@
             </widget>
            </item>
            <item>
-            <widget class="QDoubleSpinBox" name="dsb_roll"/>
+            <widget class="QDoubleSpinBox" name="dsb_roll">
+             <property name="minimum">
+              <double>-10000.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>10000.000000000000000</double>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -369,7 +573,17 @@
             </widget>
            </item>
            <item>
-            <widget class="QDoubleSpinBox" name="dsb_patch"/>
+            <widget class="QDoubleSpinBox" name="dsb_pitch">
+             <property name="minimum">
+              <double>-10000.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>10000.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>0.000000000000000</double>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -402,7 +616,14 @@
             </widget>
            </item>
            <item>
-            <widget class="QDoubleSpinBox" name="dsb_maxAngle"/>
+            <widget class="QDoubleSpinBox" name="dsb_maxAngle">
+             <property name="minimum">
+              <double>-360.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>360.000000000000000</double>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -416,7 +637,14 @@
             </widget>
            </item>
            <item>
-            <widget class="QDoubleSpinBox" name="dsb_maxYawAngle"/>
+            <widget class="QDoubleSpinBox" name="dsb_maxYawAngle">
+             <property name="minimum">
+              <double>-360.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>360.000000000000000</double>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -430,7 +658,17 @@
             </widget>
            </item>
            <item>
-            <widget class="QDoubleSpinBox" name="dsb_maxTrust"/>
+            <widget class="QDoubleSpinBox" name="dsb_maxThrust">
+             <property name="minimum">
+              <double>-10000.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>10000.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>0.000000000000000</double>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -444,7 +682,17 @@
             </widget>
            </item>
            <item>
-            <widget class="QDoubleSpinBox" name="dsb_minThrust"/>
+            <widget class="QDoubleSpinBox" name="dsb_minThrust">
+             <property name="minimum">
+              <double>-10000.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>10000.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>0.000000000000000</double>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -457,7 +705,7 @@
        <property name="title">
         <string>Command Base Flight Control</string>
        </property>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -475,7 +723,7 @@
               <string>Take off</string>
              </property>
              <property name="shortcut">
-              <string>Return</string>
+              <string>Shift+Space</string>
              </property>
             </widget>
            </item>
@@ -486,6 +734,16 @@
              </property>
              <property name="shortcut">
               <string>Space</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_send">
+             <property name="text">
+              <string>Send</string>
+             </property>
+             <property name="shortcut">
+              <string>Return</string>
              </property>
             </widget>
            </item>
@@ -565,7 +823,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>1220</x>
